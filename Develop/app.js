@@ -132,37 +132,43 @@ inquirer.prompt([
 
     const employees = [];
 
-    const manager = new Manager(answers.managerName,answers.id,answers.email,answers.officeNumber);
+    const manager = new Manager(answers.managerName, answers.id, answers.email, answers.officeNumber);
 
     employees.push(manager);
 
     for (i = 0; i < answers.engineer.length; i++) {
-        const engineer = new Engineer(answers.engineer[i].name,answers.engineer[i].id,answers.engineer[i].email,answers.engineer[i].github);
+        const engineer = new Engineer(answers.engineer[i].name, answers.engineer[i].id, answers.engineer[i].email, answers.engineer[i].github);
         employees.push(engineer);
     }
     for (i = 0; i < answers.intern.length; i++) {
-        const intern = new Intern(answers.intern[i].name,answers.intern[i].id,answers.intern[i].email,answers.intern[i].school);
+        const intern = new Intern(answers.intern[i].name, answers.intern[i].id, answers.intern[i].email, answers.intern[i].school);
         employees.push(intern);
     }
 
 
 
-    console.log('Employees: ', employees);
+    //console.log('Employees: ', employees);
 
     // After the user has input all employees desired, call the `render` function (required
     // above) and pass in an array containing all employee objects; the `render` function will
     // generate and return a block of HTML including templated divs for each employee!
+
     const html = render(employees);
 
+    // After you have your html, you're now ready to create an HTML file using the HTML
+    // returned from the `render` function. Now write it to a file named `team.html` in the
+    // `output` folder. You can use the variable `outputPath` above target this location.
+    // Hint: you may need to check if the `output` folder exists and create it if it
+    // does not.
+
+    fs.appendFile(outputPath, html, function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+    });
 });
 
 
 
-// After you have your html, you're now ready to create an HTML file using the HTML
-// returned from the `render` function. Now write it to a file named `team.html` in the
-// `output` folder. You can use the variable `outputPath` above target this location.
-// Hint: you may need to check if the `output` folder exists and create it if it
-// does not.
 
 // HINT: each employee type (manager, engineer, or intern) has slightly different
 // information; write your code to ask different questions via inquirer depending on
