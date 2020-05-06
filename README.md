@@ -36,6 +36,7 @@ A Node CLI that takes in information about a team member and generates an HTML w
   
 <h1>Tests</h1>
 <ul>
+  <li>Must be inside of Develop to run test</li>
 <li>For this project use this command:<code>npm run test</code></li>
 </ul>
 
