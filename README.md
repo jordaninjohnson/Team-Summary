@@ -34,6 +34,8 @@ A Node CLI that takes in information about a team member and generates an HTML w
   <li><h2><strong>Important!</strong></h2> Create a new folder inside of Develop called <code>output</code> this is where the new <code>team.html</code> will be created.
 </ul>
   
+![Gif](http://g.recordit.co/GRDkNrxVdZ.gif)
+
 <h1>Tests</h1>
 <ul>
   <li>Must be inside of Develop to run test</li>
@@ -46,6 +48,7 @@ A Node CLI that takes in information about a team member and generates an HTML w
 </ul>
 <h1>Usage</h1>
 
+![Gif](http://g.recordit.co/aAryVPTCr0.gif)
 <h1>Contributing</h1>
 
 <p><strong>Instructions</strong></p>
