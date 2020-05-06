@@ -22,9 +22,10 @@ A Node CLI that takes in information about a team member and generates an HTML w
 </ul>
 <h2>Setup</h2>
 <ul>
-<li>Open your terminal and find the project folder.</li>
+<li>Open Team-Summary project folder in Visual Studio Code or similar software.</li>
+  <li>Open a new Terminal and navigate to project folder</li>
+<li>Navigate into the Develop folder<
 </ul>
-
 <ul>
 <li>Use this command to download packages:<code>npm i</code>
 </li>
