@@ -30,18 +30,21 @@ A Node CLI that takes in information about a team member and generates an HTML w
 <li>Use this command to download packages:<code>npm i</code>
 </li>
 </ul>
+<ul>
+  <li><h2><strong>Important!</strong></h2> Create a new folder inside of Develop called <code>output</code> this is where the new <code>team.html</code> will be created.
+</ul>
+  
+<h1>Tests</h1>
+<ul>
+<li>For this project use this command:<code>npm run test</code></li>
+</ul>
 
-<h2>Run it!<h2>
+<h2>Run it!</h2>
 <ul>
 <li>Run the application by entering <code>node app.js</code></li>
 </ul>
 <h1>Usage</h1>
 
-<h1>Tests</h1>
-
-<ul>
-<li>For this project use this command:<code>npm run test</code></li>
-</ul>
 <h1>Contributing</h1>
 
 <p><strong>Instructions</strong></p>
