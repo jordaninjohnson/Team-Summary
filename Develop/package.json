@@ -25,6 +25,6 @@
     "inquirer-recursive": "0.0.6"
   },
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^29.3.1"
   }
 }
